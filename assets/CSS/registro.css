@@ -1,0 +1,60 @@
+/*Colores:
+
+Verde: 0Offbc;
+Morado: af3ce5;
+Rojo: ff2a00;
+Amarillo: ffec00;
+Blanco: ffffff;
+Negro: 00000;
+*/
+
+body{
+	background-color: #503f75;
+	color: whitesmoke;
+}
+
+h1, h2, h3, h4{
+	color: #ffec00;
+}
+
+.navbar-collapse{
+	float: right !important;
+}
+
+.navbar {
+   background-color: #ffffff !important;
+   background: #ffffff !important;
+   border-color: #ffffff !important;
+   color: whitesmoke !important;
+   margin-bottom: 50px;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: #ffec00 !important;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #ffec00 !important;
+  outline: 0 none !important;
+}
+
+.firstSection, .secondSection, .thirdSection{
+	background-color: #353536;
+	border-radius: 5px;
+}
+
+.logo-navbar{
+	width: 70px;
+}

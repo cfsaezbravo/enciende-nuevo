@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/CSS/registro.css">
+
+	<title>Registro Enciende 2018</title>
+</head>
+<body>
+	
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  		<a class="navbar-brand" href="#"><img id="logo-navbar" src="assets/IMG/favicon-1024x1024.png" alt="" style="width: 70px;"></a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+
+  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    		<ul class="navbar-nav mr-auto">
+      			<li class="nav-item active">
+        			<a class="nav-link" href="#">Home</a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link" href="#">¿Qué es Enciende?</a>
+      			</li>
+      			<li class="nav-item dropdown">
+        			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          			Inscríbete
+        			</a>
+        			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          				<a class="dropdown-item" href="http://enciende.cl/inscripciones/">Regístrate</a>
+          				<a class="dropdown-item" href="#">Haz tu pago</a>
+          				<a class="dropdown-item" href="#">Sube tu comprobante</a>
+        			</div>
+      			</li>
+            <li class="nav-item active"><a class="nav-link" href="#">Recursos Enciende</a></li>
+    		</ul>
+  		</div>
+	</nav>
+
+	<!--Datos Personales-->
+	
+	<div class="container">
+		<form name="inscripcion" action="" method="POST" enctype="multipart/form-data">
+      <div class="container firstSection">
+			<h4>Crea una cuenta</h4>
+  			<div class="form-row">
+    			<div class="form-group col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      				<label for="inputEmail4">Email</label>
+      				<input type="email" name="email" class="form-control" maxlength="50" placeholder="Email" required>
+    			</div>
+    			<div class="form-group col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      				<label for="inputPassword4">Password</label>
+      				<input type="password" class="form-control" name="password" placeholder="Contraseña">
+    			</div>
+  			</div>
+  			<h4>Datos Personales</h4>
+  			<div class="form-row">
+    			<div class="form-group col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      				<label for="inputName">Primer nombre</label>
+      				<input type="text" name="Primer Nombre" maxlength="15" class="form-control" required>
+    			</div>
+    			<div class="form-group col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      				<label for="inputSecondName">Segundo nombre</label>
+      				<input type="text" name="segundoNombre" class="form-control" maxlength="15">
+    			</div>
+  			</div>
+  			<div class="form-row">
+    			<div class="form-group col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      				<label for="inputFirstLastName">Apellido Paterno</label>
+      				<input type="text" name="apellidoPaterno" class="form-control" maxlength="15" required>
+    			</div>
+    			<div class="form-group col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      				<label for="inputSecondLastName">Apellido Materno</label>
+      				<input type="text" class="form-control" maxlength="15">
+    			</div>
+  			</div>
+  			<div class="form-row">
+    			<div class="form-group col-sm-4 col-md-4 col-lg-4 col-xl-4">
+      				<div class="form-check">
+  						<label class="form-check-label">
+    						<input name="sexo" class="form-check-input" type="radio" value="MUJER" checked>
+    						Mujer
+  						</label>
+					</div>
+					<div class="form-check">
+  						<label class="form-check-label">
+    						<input name="sexo" class="form-check-input" type="radio" value="HOMBRE">
+    						Hombre
+  						</label>
+					</div>
+    			</div>
+    			<div class="form-group col-sm-4 col-md-4 col-lg-4 col-xl-4">
+      				<label for="inputState">Fecha de Nacimiento</label>
+      				<br/>DÍA&nbsp;-&nbsp;MES&nbsp;-&nbsp;AÑO<br/><input type="text" name="d" maxlength="2" size="2" onkeypress='validate(event)' required>-<input type="text" name="m" maxlength="2" size="2" onkeypress='validate(event)' required>-<input type="text" name="y" maxlength="4" size="4" onkeypress='validate(event)' required>
+    			</div>
+    			<div class="form-group col-sm-4 col-md-4 col-lg-4 col-xl-4">
+      				<label for="inputZip">DNI / CI / RUT / Pasaporte</label>
+      				<input type="text" class="form-control" id="inputRut">
+    			</div>
+  			</div>
+  			<div class="form-row">
+    			<div class="form-group col-sm-4 col-md-4 col-lg-4 col-xl-4">
+      				<label for="inputZip">Nacionalidad</label>
+      				<input class="form-control" type="text" name="nacionalidad" placeholder="Nacionalidad" maxlength="20" required>
+    			</div>
+    			<div class="form-group col-sm-4 col-md-4 col-lg-4 col-xl-4">
+      				<label for="inputState">País de Residencia</label>
+      				<select id="select_pais" name="pais" required class="form-control" required>
+                <option value="" selected>Selecciona una opción...</option>
+        				<option value="CL">Chile</option>
+        				<option value="AR">Argentina</option>
+        				<option value="AU">Australia</option>
+        				<option value="AT">Austria</option>
+        				<option value="BO">Bolivia</option>
+        				<option value="BR">Brasil</option>
+        				<option value="CA">Canadá</option>
+        				<option value="CN">China</option>
+        				<option value="CO">Colombia</option>
+        				<option value="KR">Corea</option>
+        				<option value="CR">Costa Rica</option>
+        				<option value="HR">Croacia (Hrvatska)</option>
+        				<option value="CU">Cuba</option>
+        				<option value="EC">Ecuador</option>
+        				<option value="SV">El Salvador</option>
+        				<option value="ES">España</option>
+        				<option value="US">Estados Unidos</option>
+        				<option value="FR">Francia</option>
+        				<option value="GT">Guatemala</option>
+        				<option value="NL">Holanda</option>
+        				<option value="HN">Honduras</option>
+        				<option value="UK">Inglaterra</option>
+        				<option value="IT">Italia</option>
+        				<option value="MX">México</option>
+        				<option value="NI">Nicaragua</option>
+        				<option value="PA">Panamá</option>
+        				<option value="PY">Paraguay</option>
+        				<option value="PE">Perú</option>
+        				<option value="PT">Portugal</option>
+        				<option value="PR">Puerto Rico</option>
+        				<option value="DO">Rep. Dominicana</option>
+        				<option value="RU">Rusia</option>
+        				<option value="CH">Suiza</option>
+        				<option value="UY">Uruguay</option>
+        				<option value="VE">Venezuela</option>
+        				<option value="O">Otro</option>
+      				</select>
+    			</div>
+    			<div class="form-group col-sm-4 col-md-4 col-lg-4 col-xl-4">
+      				<label for="inputZip">Ciudad</label>
+      				<input type="text" class="form-control" id="ciudad" value="Ciudad" name="ciudad">
+    			</div>
+  			</div>
+  			<div class="form-row" id='nacional'>
+    			<div class="form-group col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      				<label for="inputState">Región</label>
+      				<select id="select_region" name="region" required class="form-control">
+      					<option value="RM" selected>Región Metropolitana</option>
+      					<option value="15">XV Arica y Parinacota</option>
+        				<option value="1">I Tarapaca</option>
+						    <option value="2">II Antofagasta</option>
+						    <option value="3">III Atacama</option>
+						    <option value="4">IV Coquimbo</option>
+						    <option value="5">V Valparaíso</option>
+						    <option value="6">VI Libertador General Bernardo O'Higgins</option>
+						    <option value="7">VII Maule</option>
+						    <option value="8">VIII Bío Bío</option>
+						    <option value="9">IX Araucanía</option>
+						    <option value="14">XIV Los Rios</option>
+						    <option value="10">X Los Lagos</option>
+						    <option value="11">XI Aisén del General Carlos Ibañez del Campo</option>
+						    <option value="12">XII Magallanes Y Antártica Chilena</option>
+      				</select>
+    			</div>
+    			<div class="form-group col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      				<label for="inputSecondName">Comuna</label>
+      				<input type="text" name="comuna" class="form-control" value="Comuna" required>
+    			</div>
+  			</div>
+  			<div id='internacional'></div>
+  			<div class="form-row">
+  				<div class="form-group col-sm-12 col-md-6 col-lg-6 col-xl-6">
+    				<label for="inputAddress">Dirección</label>
+    				<input type="text" class="form-control" name="direccion" placeholder="Escribe tu dirección" maxlength="50" required>
+    			</div>
+    			<div class="form-group col-sm-12 col-md-6 col-lg-6 col-xl-6">
+    				<label for="inputAddress">Celular/Whatsapp</label>
+    				<input class="form-control" type="text" name="celular" maxlength="15" placeholder="Código de país + número (+569 12345678)" required/>
+    			</div>
+  			</div>
+  			<div class="form-row">
+    			<div class="form-group col-sm-4 col-md-4 col-lg-4 col-xl-4">
+      				<label for="inputZip">Contacto de Emergencia (Nombre y Apellido)</label>
+      				<input type="text" class="form-control" name="personaContacto" placeholder="Nombre y Apellido" maxlength="30" required>
+    			</div>
+    			<div class="form-group col-sm-4 col-md-4 col-lg-4 col-xl-4">
+      				<label for="inputZip">Celular de Emergencia</label>
+      				<input type="text" class="form-control" name="celularContacto" maxlength="13" required>
+    			</div>
+    			<div class="form-group col-sm-4 col-md-4 col-lg-4 col-xl-4">
+      				<label for="inputState">Relación Contacto Emergencia</label>
+      				<select name="relacionContacto" maxlength="15" required class="form-control">
+        				<option value="padre/madre" selected>Padre/Madre</option>
+        				<option value="hermano(a)">Hermano(a)</option>
+        				<option value="amigo(a)">Amigo(a)</option>
+        				<option value="otro">Otro</option>
+      				</select>
+    			</div>
+  			</div>
+        </div>
+        <br>
+        <br>
+        <div class="container secondSection">
+  			<h4>Datos de tu Iglesia</h4>
+  			<div class="form-row">
+    			<div class="form-group col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      				<label for="inputEmail4">Nombre de la iglesia</label>
+      				<input type="text" class="form-control" name="nombreIglesia" maxlength="20" placeholder="Iglesia">
+    			</div>
+    			<div class="form-group col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      				<label for="inputState">Denominación</label>
+      				<select name="denominacion" class="form-control">
+      					<option value="" selected required>Selecciona una opción...</option>
+        				<option value="Alianza Cristiana y Misionera ACYM">Alianza Cristiana y Misionera ACYM</option>
+			            <option value="Anglicana De Chile IACH">Anglicana De Chile IACH</option>
+			            <option value="Anglicana Carismatica">Anglicana Carismatica	</option>
+			            <option value="Asamblea de Dios Autónoma IADDA">Asamblea de Dios Autónoma IADDA</option>
+			            <option value="Asambleas de Dios">Asambleas de Dios</option>
+			            <option value="Bautista Reformada">Bautista Reformada</option>
+			            <option value="Calvary Chapel">Calvary Chapel</option>
+			            <option value="Corporación Iglesia Evangélica de Vitacura">Corporación Iglesia Evangélica de Vitacura</option>
+			            <option value="Cristiana Presbiteriana">Cristiana Presbiteriana</option>
+			            <option value="De Cristo">De Cristo</option>
+			            <option value="De Dios">De Dios</option>
+			            <option value="Del Señor">Del Señor</option>
+			            <option value="Ejército de Salvación">Ejército de Salvación</option>
+			            <option value="Evangélica de Cristo">Evangélica de Cristo</option>
+			            <option value="Evangélica Pentecostal IEP">Evangélica Pentecostal IEP</option>
+			            <option value="Iglesia Evangélica Presbiteriana en Chile">Iglesia Evangélica Presbiteriana en Chile</option>
+			            <option value="Iglesia Pentecostal Apostólica">Iglesia Pentecostal Apostólica</option>
+			            <option value="La Viña">La Viña</option>
+			            <option value="Luterana de Chile">Luterana de Chile</option>
+			            <option value="Metodista">Metodista</option>
+			            <option value="Metodista-Libre">Metodista-Libre</option>
+			            <option value="Metodista de Chile">Metodista de Chile</option>
+			            <option value="Metodista Pentecostal IMPCH">Metodista Pentecostal IMPCH</option>
+			            <option value="Misión Evangélica San Pablo">Misión Evangélica San Pablo</option>
+			            <option value="Pentecostal Apostólica">Pentecostal Apostólica</option>
+			            <option value="Pentecostal Evangélica de Chile">Pentecostal Evangélica de Chile</option>
+			            <option value="Pentecostal Reformada">Pentecostal Reformada</option>
+			            <option value="Pentecostal Trinidad">Pentecostal Trinidad</option>
+			            <option value="Presbiteriana de Chile">Presbiteriana de Chile</option>
+			            <option value="Presbiteriana Nacional">Presbiteriana Nacional</option>
+			            <option value="Unión Bautista de Chile UBACH">Unión Bautista de Chile UBACH</option>
+			            <option value="Unión de Centros Bíblicos">Unión de Centros Bíblicos</option>
+			            <option value="Otra - Sin denominación - Independiente">Otra - Sin denominación - Independiente</option>
+      				</select>
+    			</div>
+  			</div>
+  			<div class="form-row">
+    			<div class="form-group col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      				<label for="inputState">¿Participas en algún Ministerio?</label>
+      				<select name="ministerio" maxlength="20" class="form-control">
+        				<option selected>Selecciona...</option>
+        				<option value="ninguno">Ninguno</option>
+        				<option value="jovenes">Jóvenes</option>
+        				<option value="adoracion">Adoración</option>
+        				<option value="voluntarios">Voluntarios</option>
+        				<option value="multimedia">Multimedia</option>
+        				<option value="ninos">Niños</option>
+        				<option value="misiones">Misiones</option>
+        				<option value="otro">Otro</option>
+      				</select>
+    			</div>
+    			<div class="form-group col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      				<label for="inputState">¿Eres Pastor o Líder en tu Iglesia?</label>
+      				<select id="inputState" class="form-control">
+        				<option selected>Selecciona...</option>
+        				<option value="lider">Líder</option>
+        				<option value="pastor">Pastor</option>
+        				<option value="no">No</option>
+      				</select>
+    			</div>
+  			</div>
+  			<div class="form-row">
+    			<div class="form-group col-sm-12 col-md-3 col-lg-3 col-xl-3">
+      				<label for="inputEmail4">Nombre y apellido de tu líder de Iglesia</label>
+      				<input type="text" class="form-control" name="nombreLider" placeholder="Nombre de Tu Líder" maxlength="25">
+    			</div>
+    			<div class="form-group col-sm-12 col-md-3 col-lg-3 col-xl-3">
+      				<label for="inputEmail4">Email de tu líder de Iglesia</label>
+      				<input type="text" class="form-control" id="inputEmail4">
+    			</div>
+    			<div class="form-group col-sm-12 col-md-3 col-lg-3 col-xl-3">
+      				<label for="inputEmail4">Nombre y Apellido de tu Pastor</label>
+      				<input type="text" class="form-control" name="nombrePastor" placeholder="Nombre y Apellido" maxlength="30">
+    			</div>
+    			<div class="form-group col-sm-12 col-md-3 col-lg-3 col-xl-3">
+      				<label for="inputEmail4">Email de tu Pastor</label>
+      				<input type="text" class="form-control" name="emailPastor" placeholder="Email de tu Pastor" maxlength="50">
+    			</div>
+  			</div>
+        </div>
+        <br>
+        <br>
+        <div class="container thirdSection">
+  			<h4>Datos de Cuidado</h4>
+  			<div class="form-row">
+  				<div class="form-check form-check-inline">
+  					<label for="inputEmail4">¿Sufres de alguna enfermedad de cuidado?</label>
+  					<label class="form-check-label">
+    					<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">Sí
+  					</label>
+				</div>
+				<div class="form-check form-check-inline">
+  					<label class="form-check-label">
+    					<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">No
+  					</label>
+				</div>
+  			</div>
+  			<div class="form-row">
+  				<div class="form-check form-check-inline">
+  					<label for="inputEmail4">Si respondiste SÍ, ¿cuál?</label>
+  					<label class="form-check-label">
+    					<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">Diabetes
+  					</label>
+				</div>
+				<div class="form-check form-check-inline">
+  					<label class="form-check-label">
+    					<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">Celiaco
+  					</label>
+				</div>
+				<div class="form-check form-check-inline">
+  					<label class="form-check-label">
+    					<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">Intolerancia a la lactosa
+  					</label>
+				</div>
+				<div class="form-group">
+      				<input type="text" class="form-control" id="inputEmail4" placeholder="Otras">
+    			</div>
+  			</div>
+  			<div class="form-row">
+  				<div class="form-check form-check-inline">
+  					<label for="inputEmail4">¿Sufres de alguna alergia?</label>
+  					<label class="form-check-label">
+    					<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">Sí
+  					</label>
+				</div>
+				<div class="form-check form-check-inline">
+  					<label class="form-check-label">
+    					<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">No
+  					</label>
+				</div>
+				<div class="form-group">
+      				<input type="text" class="form-control" id="inputEmail4" placeholder="¿Cuál?">
+    			</div>
+  			</div>
+  			<div class="form-row">
+    			<div class="form-group col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      				<p>Si tienes alguna información importante que debemos tener en consideración durante tu permanencia en el Campamento, por favor, coméntanos aquí.</p>
+    			</div>
+    			<div class="form-group col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      				<textarea name="" id="" cols="30" rows="3"></textarea>
+    			</div>
+  			</div>
+  			<div class="form-row">
+  				<button type="submit" name="btn-signup" class="btn btn-primary">Inscríbete</button>
+  			</div>
+        </div>
+		</form>
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+              $(document).ready(function() {
+                  $('#internacional').hide();
+                  $('#nacional').hide();  
+                  $('#select_pais').change(function(){
+                      if($('#select_pais').val() == 'CL')
+                      {
+                          $('#nacional').show();
+                          $('#internacional').hide();
+                      }
+                      else
+                      {
+                          $('#internacional').show();
+                          $('#nacional').hide();
+                      } 
+                  });
+              });
+  </script>
+</body>
+</html>
