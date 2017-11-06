@@ -28,6 +28,8 @@ hr{
    background: transparent !important;
    border-color: transparent !important;
    position: fixed;
+   width: 1425px;
+   z-index: 1000;
 }
 
 .navbar li { color: #000; }
