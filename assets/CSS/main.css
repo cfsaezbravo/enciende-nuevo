@@ -48,7 +48,7 @@ hr{
 }
 
 .nav-link:hover{
-	border-bottom: 3px solid #FF5D28;
+	border-bottom: 1px solid #FF5D28;
 }
 
 .dropdown-toggle{
