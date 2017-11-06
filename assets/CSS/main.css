@@ -47,10 +47,18 @@ hr{
 	color: white !important;
 }
 
+.nav-link:hover{
+	border-bottom: 3px solid #FF5D28;
+}
+
 .dropdown-toggle{
 	background-color: 
 	background-color: #FF5D28;
 }
+
+
+
+/* Index.html */
 
 .primeraSeccion{
 	background-image: url(../IMG/back2-min.jpg);
@@ -120,6 +128,18 @@ hr{
 	margin: 0 auto;
 }
 
+/* Expositores.html */
+
+body{
+	background-color: black;
+}
+
+.img-expositor{
+	height: 400px;
+}
+
+/* Footer */
+
 .footer{
 	background-image: url(../IMG/back4-min.jpg);
 	background-size: cover;
@@ -131,3 +151,4 @@ hr{
 .logo_verde{
 	height: 200px;
 }
+
