@@ -138,6 +138,13 @@ body{
 	height: 400px;
 }
 
+/* Información General */
+
+#google-map{
+	height: 200px;
+	width: 500px;
+}
+
 /* Footer */
 
 .footer{
