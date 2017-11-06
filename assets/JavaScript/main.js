@@ -30,7 +30,7 @@ window.addEventListener('scroll', function (e) {
 
 			  marker = new google.maps.Marker({
 				map:map,
-				draggable:true,
+				draggable:false,
 				animation: google.maps.Animation.DROP,
 				position: markerposition
 			  });
