@@ -1,0 +1,131 @@
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) { 
+
+.navbar{
+	position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    width: 320px;
+    background-color: #1B0031 !important;
+}
+
+.navbar-collapse {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 0px;
+}
+
+.navbar-brand{
+	margin-left: 0px;
+}
+
+.navbar-light .navbar-toggler-icon {
+    color: white !important;
+}
+
+/* Index principal */
+
+.primeraSeccion{
+	padding: 50px;
+    padding-top: 0px;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-size: 30px !important;
+}
+
+p{
+	font-size: 13px !important;
+}
+
+hr{
+	width: 110px;
+}
+
+.segundaSeccion{
+	display: none;
+}
+
+.terceraSeccion{
+	padding: 30px;
+}
+
+.separador{
+	border-top: 6px solid #fff;
+    width: 98px;
+    margin-left: -13px;
+}
+
+#expositores{
+	width: 267px;
+    height: 112px;
+    margin-bottom: 30px;
+}
+
+/* Información General */
+
+.titulo-expositores{
+	left: 50px;
+}
+
+.primer-row{
+	height: 765px;
+}
+
+.segundo-row{
+	display: none;
+}
+
+.tercer-row{
+	height: 1560px;
+}
+
+.image{
+	height: 275px;
+    width: 192px;
+}
+
+.overlay{
+	height: 275px;
+    width: 192px;
+}
+
+/* Expositores */
+
+.row-expo{
+	padding: 0px;
+}
+
+.img-expositor{
+	height: 150px;
+}
+/* Footer */
+.footer{
+	padding: 60px;
+}
+
+.logo_verde{
+	height: 170px;
+}
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : portrait) { 
+
+
+
+ }
