@@ -131,11 +131,43 @@ hr{
 /* Expositores.html */
 
 body{
-	background-color: black;
+	background-color: #E6E6E6;
+}
+
+.header-expositores{
+	background-image: url(../IMG/header-expositores.jpg);
+	background-size: cover;
+	height: 400px;
 }
 
 .img-expositor{
-	height: 400px;
+	height: 350px;
+}
+
+.titulo-expositores{
+	position: relative;
+    height: 100px;
+    top: 150px;
+    left: 150px;
+    font-size: 60px;
+}
+
+.col-expositor{
+	background-color: #1B0031;
+}
+
+.texto-expositor{
+	color: black !important;
+	font-size: 15px;
+}
+
+.row-expo{
+	padding: 40px;
+	margin: 20px;
+}
+
+.container-jaz, .container-leif, .container-menny, .container-scott{
+	background-color: white;
 }
 
 /* Información General */
@@ -144,6 +176,7 @@ body{
 	height: 200px;
 	width: 500px;
 }
+
 
 /* Footer */
 
