@@ -257,7 +257,19 @@ body{
   -ms-transform: translate(-50%, -50%);
 }
 
+/* Recursos Enciende 2017 */
 
+.header-recursos{
+	background-image: url(../IMG/header-recursos.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+}
+
+.img-recursos{
+	width: 300px;
+	cursor: pointer;
+}
 
 
 /* Footer */
