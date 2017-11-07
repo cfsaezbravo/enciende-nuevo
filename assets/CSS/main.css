@@ -75,6 +75,7 @@ hr{
 .btn-primary, .btn-secondary{
 	background-color: #FF5D28;
 	border-color: #FF5D28;
+	cursor: pointer;
 }
 
 .btn-primary:hover, .btn-secondary:hover{
