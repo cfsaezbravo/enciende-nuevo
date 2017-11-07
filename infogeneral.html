@@ -57,30 +57,66 @@
 	<!--HEADER-->
 
 	<div class="container-fluid">
-		<div class="row">
-			<br>
-			<br>
-			<br>
-			<br>
+		<div class="row header-campamento">
+			<h1 class="titulo-expositores">campamento <br> enciende_ </h1>
 		</div>
 	</div>
 
-	<!-- EXPOSITORES -->
+	<!-- FECHA - LUGAR - VALOR -->
 
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6 col-md-6 col-sm-12">
-				<h1>infor <br> mación_ </h1>
+	<div class="container-fluid text-center">
+		<div class="row primer-row">
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<i style="color: #FF5D28;" class="fa fa-calendar fa-4x" aria-hidden="true"></i>
+				<h4 style="color: #FF5D28;">Fecha</h4>
+				<p style="color: black;">21 al 24 de Febrero</p>
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12">
-				<h4>fecha_</h4>
-				<p>21 al 24 de Febrero</p>
-				<h4>lugar_</h4>
-				<p>Aquabuin</p>
-				<h4>valor_</h4>
-				<p>$60.000 (hasta noviembre)</p>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<i style="color: #FF5D28;" class="fa fa-map-marker fa-4x" aria-hidden="true"></i>
+				<h4 style="color: #FF5D28;">Lugar</h4>
+				<p style="color: black;">Aquabuin</p>
+				<button type="button" class="btn btn-primary">ver mapa</button>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<i style="color: #FF5D28;" class="fa fa-money fa-4x" aria-hidden="true"></i>
+				<h4 style="color: #FF5D28;">Valor</h4>
+				<p style="color: black;">$65.000</p>
+				<p style="color: black;">(Promoción hasta el 30 de noviembre a $60.000)</p>
+				<button type="button" class="btn btn-primary" href="#">quiero ir a Enciende</button>
 			</div>
 		</div>
+		<div class="row segundo-row">
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<h1 style="color: #1B0031;">pro<br>gra<br>ma_</h1>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<p style="color: black; margin-top: 27px; font-size: 18px;">¿Quieres saber cuáles serán nuestras actividades durante el campamento? Échale un vistazo a nuestro programa</p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<button style="margin-top: 53px;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  				ver programa aquí
+				</button>
+				<!-- Modal -->
+				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  				<div class="modal-dialog" role="document">
+    				<div class="modal-content">
+      					<div class="modal-header">
+        					<h5 class="modal-title" id="exampleModalLabel">Programa Campamento Enciende 2018</h5>
+        					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          						<span aria-hidden="true">&times;</span>
+        					</button>
+      					</div>
+      					<div class="modal-body">
+      						<img id="programa" src="assets/IMG/Programa.png" alt="">
+    					</div>
+  					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+
+	<div class="container">
 		<div class="row">
 			<div class="col-lg-6 col-md-6 col-sm-12">
 				<h1>entra <br> das_ </h1>
