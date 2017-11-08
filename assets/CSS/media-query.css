@@ -134,15 +134,54 @@ hr{
     margin-bottom: 20px;
 }
 
+/* ¿Qué es Enciende? */
+
+.header-que-es{
+    padding: 0px;
+}
+
+iframe{
+    width: 290px;
+    height: 200px;
+    position: relative;
+    bottom: 44px;
+    right: 44px;
+}
+
+.container-video{
+    background-color: #1B0031;
+    margin: 20px;
+    height: 250px;
+    width: 300px;
+    position: relative;
+    right: 10px;
+}
+
+.años {
+    width: 50px;
+    margin: 0px;
+    position: relative;
+    font-size: 40px;
+    font-weight: bold;
+    left: 0px;
+    bottom: 64px !important;
+    font-size: 18px !important;
+}
+
 /* Footer */
 
 .footer{
 	padding: 60px;
-    height: 300px !important;
+    height: 350px !important;
 }
 
 .icono-footer{
     width: 200px !important;
+    margin-top: 30px;
+}
+
+.logo-roger {
+    width: 200px;
     margin-top: 30px;
 }
 }

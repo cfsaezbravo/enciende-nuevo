@@ -280,6 +280,33 @@ body{
 	cursor: pointer;
 }
 
+/* ¿Qué es Enciende?*/
+
+.header-que-es{
+	background-image: url(../IMG/header-que-es.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+	padding: 120px;
+}
+
+.container-video{
+	background-color: #1B0031;
+	margin: 50px;
+	padding: 50px;
+	height: 545px;
+	width: 900px;
+}
+
+.años{
+	width: 50px;
+    margin: 0px;
+    position: relative;
+    font-size: 40px;
+    font-weight: bold;
+    bottom: 445px;
+    left: 760px;
+}
 
 /* Footer */
 
@@ -295,7 +322,7 @@ body{
 	cursor: pointer;
 }
 
-.logo_verde{
-	height: 200px;
+.logo-roger{
+	width: 300px;
 }
 
