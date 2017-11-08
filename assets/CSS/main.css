@@ -78,6 +78,10 @@ hr{
 	cursor: pointer;
 }
 
+.btn-primary{
+	margin: 0 auto;
+}
+
 .btn-primary:hover, .btn-secondary:hover{
 	background-color: #ff8963;
 	border-color: #ff8963;
@@ -120,9 +124,11 @@ hr{
     margin-left: -15px;
 }
 
-#expositores{
-	height: 400px;
+.expositores{
+	height: 270px;
     margin: 0 auto;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .btn-expositores{
@@ -155,6 +161,7 @@ body{
 
 .col-expositor{
 	background-color: #1B0031;
+	padding: 50px;
 }
 
 .texto-expositor{

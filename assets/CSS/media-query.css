@@ -62,6 +62,11 @@ hr{
 
 .terceraSeccion{
 	padding: 30px;
+    height: 650px;
+}
+
+.expositores{
+    height: 126px;
 }
 
 .btn-expositores{
@@ -115,14 +120,24 @@ hr{
 	padding: 0px;
 }
 
+.col-expositor{
+    padding: 15px;
+}
+
 .img-expositor{
-	height: 150px;
+	height: 190px;
+}
+
+.container-jaz, .container-leif, .container-menny, .container-scott{
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 /* Footer */
+
 .footer{
 	padding: 60px;
-    height: 665px;
+    height: 665px !important;
 }
 
 .logo_verde{
