@@ -323,7 +323,12 @@ body{
 	background-size: cover;
 	background-position: center;
 	height: 400px;
-	padding: 120px;
+	padding: 160px;
+}
+
+.input-group{
+	margin: 20px;
+    width: 350px;
 }
 
 /* Footer */
