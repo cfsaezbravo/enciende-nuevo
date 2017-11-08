@@ -97,7 +97,7 @@ hr{
 }
 
 .segundo-row{
-	display: none;
+	display: none !important;
 }
 
 .tercer-row{
