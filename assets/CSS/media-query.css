@@ -42,6 +42,7 @@ and (max-device-width : 480px) {
 .primeraSeccion{
 	padding: 50px;
     padding-top: 0px;
+    height: 450px;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -66,7 +67,7 @@ hr{
 }
 
 .expositores{
-    height: 126px;
+    height: 80px;
 }
 
 .btn-expositores{
