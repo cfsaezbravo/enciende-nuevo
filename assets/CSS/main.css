@@ -290,8 +290,16 @@ body{
 	padding: 120px;
 }
 
-.container-video{
-	background-color: #1B0031;
+.container-video1{
+	background-color: #783A9D;
+	margin: 50px;
+	padding: 50px;
+	height: 545px;
+	width: 900px;
+}
+
+.container-video2{
+	background-color: white;
 	margin: 50px;
 	padding: 50px;
 	height: 545px;
