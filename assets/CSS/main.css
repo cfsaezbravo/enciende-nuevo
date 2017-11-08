@@ -316,6 +316,16 @@ body{
     left: 760px;
 }
 
+/*Login*/
+
+.login{
+	background-image: url(../IMG/header_login.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+	padding: 120px;
+}
+
 /* Footer */
 
 .footer{
