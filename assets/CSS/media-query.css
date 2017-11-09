@@ -168,6 +168,20 @@ iframe{
     font-size: 18px !important;
 }
 
+/*Log In*/
+
+.login{
+    padding: 60px;
+}
+
+.container-form{
+    padding: 10px !important;
+}
+
+.input-group{
+    margin: 10px;
+}
+
 /* Footer */
 
 .footer{
