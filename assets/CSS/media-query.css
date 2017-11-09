@@ -26,7 +26,7 @@ and (max-device-width : 480px) {
     flex-grow: 1;
     -ms-flex-align: center;
     align-items: center;
-    margin-left: 0px;
+    margin-left: 0px !important;
 }
 
 .navbar-brand{
@@ -35,6 +35,14 @@ and (max-device-width : 480px) {
 
 .navbar-light .navbar-toggler-icon {
     color: white !important;
+}
+
+.btn-login{
+    background-color: #00ffbc;
+    border-color: #00ffbc;
+    margin-left: 0px;
+    cursor: pointer;
+    margin-top: 13px;
 }
 
 /* Index principal */
