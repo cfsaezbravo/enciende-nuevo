@@ -40,7 +40,7 @@ hr{
 }
 
 .navbar-collapse{
-	margin-left: 250px;
+	margin-left: 250px !important;
 }
 
 .nav-link{
