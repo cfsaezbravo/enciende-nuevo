@@ -94,7 +94,7 @@ hr{
 }
 
 .primer-row{
-	height: 765px;
+	height: 835px;
 }
 
 .segundo-row{
@@ -113,6 +113,17 @@ hr{
 .overlay{
 	height: 275px;
     width: 192px;
+}
+
+.row-mapa{
+    padding: 10px !important;
+    height: 400px;
+}
+
+.mapa{
+    position: relative;
+    left: 5px !important;
+    top: 10px !important;
 }
 
 /* Expositores */
@@ -294,6 +305,16 @@ iframe{
     margin-top: 30px;
 }
 
+.row-mapa{
+    padding: 10px;
+    height: 400px;
+}
+
+.mapa{
+    position: relative;
+    left: 5px !important;
+    top: 30px !important;
+}
 }
 
 @media only screen 
